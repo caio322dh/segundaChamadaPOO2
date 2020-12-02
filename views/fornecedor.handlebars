@@ -1,0 +1,9 @@
+<center> <h1>Fornecedores Cadastrados</h1> </center>
+
+{{#each fornecedor}}
+<hr><center>
+    ID: {{id}} <br><br>
+    Nome do Fornecedor: {{nome_fornecedor}} <br><br>
+    <a href="/del-fornecedor/{{id}}"><button>Apagar</button></a>
+<hr></center>
+{{/each}}

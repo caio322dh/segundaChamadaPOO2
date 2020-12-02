@@ -1,0 +1,14 @@
+<center> <h1>Agendamentos Realizados</h1> </center>
+
+{{#each agendamento}}
+<hr><center>
+    ID: {{id}} <br><br>
+    Data da entrega: {{data_entrega}} <br><br>
+    Nome do Fornecedor: {{nome_fornecedor}} <br><br>
+    Nome do Motorista: {{nome_motorista}} <br><br>
+    Nome do Comprador: {{nome_comprador}} <br><br>
+    Telefone do Comprador: {{telefone_comprador}} <br><br>
+    Sucata a ser entregue: {{sucata_entregue}} <br><br> 
+    <a href="/del-agendamento/{{id}}"><button>Cancelar</button></a>
+<hr></center>
+{{/each}}
